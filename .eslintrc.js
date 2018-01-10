@@ -7,18 +7,18 @@ module.exports = {
       'error',
       {
         singleQuote: true,
-        trailingComma: 'all'
-      }
+        trailingComma: 'all',
+      },
     ],
     'jsx-a11y/anchor-is-valid': [
       'error',
       {
         components: ['Link'],
-        specialLink: ['to']
-      }
-    ]
+        specialLink: ['to'],
+      },
+    ],
   },
   env: {
-    browser: true
-  }
+    browser: true,
+  },
 };

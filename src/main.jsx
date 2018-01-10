@@ -1,14 +1,13 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container } from '@cerebral/react';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import controller from './controller';
-
-import PersonCollection from './PersonCollection';
+import App from './App';
 
 ReactDOM.render(
   <Container controller={controller}>
-    <PersonCollection />
+    <App />
   </Container>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );
