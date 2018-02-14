@@ -5,21 +5,21 @@ module.exports = {
   entry: './src/main.jsx',
   output: {
     filename: './bundle.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist'),
   },
   module: {
     rules: [
       {
         test: /\.pug$/,
-        loader: 'pug-loader'
+        loader: 'pug-loader',
       },
       {
         test: /\.css$/,
-        use: [{ loader: 'style-loader' }, { loader: 'css-loader' }]
+        use: [{ loader: 'style-loader' }, { loader: 'css-loader' }],
       },
       {
         test: /\.(eot|svg|ttf|woff|woff2)$/,
-        loader: 'file-loader'
+        loader: 'file-loader',
       },
       {
         test: /\.(js|jsx)$/,
@@ -27,23 +27,23 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['babel-preset-env', 'babel-preset-react']
-          }
-        }
-      }
-    ]
+            presets: ['babel-preset-env', 'babel-preset-react'],
+          },
+        },
+      },
+    ],
   },
   plugins: [
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: './src/index.pug'
-    })
+      template: './src/index.pug',
+    }),
   ],
   resolve: {
-    extensions: ['.js', '.jsx']
+    extensions: ['.js', '.jsx'],
   },
   devServer: {
     contentBase: './dist',
-    historyApiFallback: true
-  }
+    historyApiFallback: true,
+  },
 };

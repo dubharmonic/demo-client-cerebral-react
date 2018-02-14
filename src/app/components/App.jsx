@@ -20,7 +20,6 @@ export default connect(
   /* eslint-disable prefer-arrow-callback */
   function App({ currentPage }) {
     const Page = pages[currentPage];
-
     return (
       <div className="container">
         <PageHeader>React Demo UI</PageHeader>

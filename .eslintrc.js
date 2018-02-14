@@ -3,13 +3,6 @@ module.exports = {
   plugins: ['prettier'],
   rules: {
     'arrow-parens': ['error', 'as-needed'],
-    'prettier/prettier': [
-      'error',
-      {
-        singleQuote: true,
-        trailingComma: 'all',
-      },
-    ],
     'jsx-a11y/anchor-is-valid': [
       'error',
       {
@@ -20,5 +13,6 @@ module.exports = {
   },
   env: {
     browser: true,
+    mocha: true,
   },
 };
